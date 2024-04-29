@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOW MOVIE</title>
   <style>
     @import "movie.css";
   </style>
-<body>
-    <header>
-        <h1>내배캠 최고 평점 영화 콜렉션</h1>
-    </header>
-    영화 검색 : <input type="영화 제목을 검색해 보세요 " />
-    <button>검색</button>
-    <hr>
-    <div id="movie-boxs">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="..." class="poster_path" alt="...">
-            <div class="card-body">
-              <h5 class="title">제목</h5>
-              <p class="overveiw">내용 요약</p>
-              <p class="vote_average">평점</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+
+<body style="text-align: center; background-color: rgb(228, 220, 220);">
+  <header>
+    <h1 class = "main">SHOW MOVIE</h1>
+  </header>
+  영화 검색 : <input type="text" id="search-input" placeholder="영화를 입력해주세요." />
+  <button type="button" id="searchbtn" onclick="searchPost()">검색</button>
+  <hr>
+
+  <div class="movie-boxs" id="cards" style="background-color: gray;">
+  </div>
 
 
-    <script src="movie.js" defer></script>
+
+
+  <script src="movie.js" defer></script>
 </body>
 
 </html>
